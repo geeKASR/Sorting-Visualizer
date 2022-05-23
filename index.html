@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f980196f36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class = "navbar">
+        <div class = "navbarTop nav">
+            <div id = "logo" class = "navbarItems">
+                SORTING - VISUALIZER
+            </div>
+            <div class = "navbarItems" id = "buttonSection">
+                <button  id = "MergeId" class = "buttonStyle buttonHover" >Merge</button>
+                <button  id = "QuickId" class = "buttonStyle buttonHover">Quick</button>
+                <button  id = "SelectionId" class = "buttonStyle buttonHover">Selection</button>
+                <button  id = "InsertionId" class = "buttonStyle buttonHover">Insertion</button>
+                <button  id = "BubbleId" class = "buttonStyle buttonHover">Bubble</button>
+            </div>
+        </div>
+        <div class = "navbarOptions nav" >
+            <div class = "options" id = "generate">Generate New Array !!</div>
+            <div class = "options" id = "speed">
+                <span>Speed</span>
+                <input type="range" id = "speedNum" min ="1" 
+                max = "5" step = "1" value = "3">
+            </div>
+            <div class = "options" id = "number">
+                <span>Number</span>
+                <input type="range" id = "numberNum" min ="10" 
+                max = "300" step = "1" value = "10">
+            </div>
+            <div class = "options" >
+                <!-- <button id = "Reset" class = "bigButtonHover"><i class="fa-solid fa-arrow-rotate-left"></i></button> -->
+                <button id = "Sort" class = "bigButton bigButtonHover"><i class="fa-solid fa-play"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id = "container">
+        <div class = "containerItem" id = "values">
+            <!-- <div class="value"></div>
+            <div class="value"></div>
+            <div class="value"></div> -->
+        </div>
+        <div class = "containerItem" id = "base"></div>
+    </div>
+</body>
+<script src="scripts/script.js" ></script>
+<script src="scripts/bubbleSort.js"></script>
+<script src="scripts/insertionSort.js"></script>
+<script src="scripts/selectionSort.js"></script>
+<script src="scripts/quickSort.js"></script>
+<script src="scripts/mergeSort.js"></script>
+</html>
